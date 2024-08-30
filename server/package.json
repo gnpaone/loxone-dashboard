@@ -5,8 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "server": "node index.js",
-    "build": "npm install --legacy-peer-deps &&  npm install --legacy-peer-deps --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
