@@ -14,11 +14,15 @@ const port = 3001;
 app.use(cors());
 require('dotenv').config()
 
+const PORT = 5000;
+
 let isLightOn = false;
 
-const wss = new WebSocket.Server({ port: 5000 });
+const wsServer = new WebSocket.Server({
+    port: PORT
+});
 
-wss.on('connection', (ws) => {
+wsServer.on('connection', function (ws) {
     console.log('WebSocket connection established');
 
     ws.on('message', async (message) => {
@@ -115,6 +119,9 @@ async function sendCommand(uuid, command) {
         await socket.close();
     }
 }
+
+console.log( (new Date()) + " Server is listening on port " + PORT);
+
 // const __dirname1 = path.resolve();
 // if (process.env.NODE_ENV === 'production') {
 //     app.use(express.static(path.join(__dirname1, '/client/build')));
