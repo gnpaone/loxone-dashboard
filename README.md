@@ -42,6 +42,10 @@ cd client
 npm start
 ```
 
+## Deployment
+
+<div align="center"><a href="https://glitch.com"><img src="https://www.svgrepo.com/show/353793/glitch-icon.svg" alt="Glitch.com" width="75px" /></a> <img src="https://static.thenounproject.com/png/877484-200.png" width="75px" /> <a href="https://github.com"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="Github.com" width="75px" /></a></div>
+
 ## Screenshots
 
 [<img src="./images/s1.png" width="50%" alt="Light off" />](./images/s1.png)[<img src="./images/s2.png" width="50%" alt="Light on" />](./images/s2.png)
